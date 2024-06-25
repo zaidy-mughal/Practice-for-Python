@@ -14,9 +14,9 @@ def binarySearch(data,sortedList):
     if data == sortedList[middleIndex]:
         return True
     if data < sortedList[middleIndex]:
-        binarySearch(data,sortedList[:middleIndex])
+        return binarySearch(data,sortedList[:middleIndex])
     if data > sortedList[middleIndex]:
-        binarySearch(data,sortedList[middleIndex:])
+        return binarySearch(data,sortedList[middleIndex:])
     else:
         return False 
 
