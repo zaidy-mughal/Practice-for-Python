@@ -1,0 +1,1 @@
+# this function is used to read the txt file and count the frequency of 
