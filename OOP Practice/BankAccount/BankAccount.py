@@ -7,17 +7,22 @@ class BankAccount:
 
 
     def deposit(self,depositAmount):
-        totalBalance += depositAmount
-        return totalBalance
+        self.totalBalance += depositAmount
+        print(depositAmount," with Interest Successfully Deposited! ")
 
     def withdraw(self,withdrawAmount):
-        if totalBalance >= withdrawAmount:
-            totalBalance -= withdrawAmount
-            return totalBalance
+        if self.totalBalance >= withdrawAmount:
+            self.totalBalance -= withdrawAmount
+            print(withdrawAmount, ' is Successfully withdrawed from your account!')
         else:
             print("You did'nt have enough balance")
-            return -1
 
     def checkBalance(self):
             return self.totalBalance
     
+    def __str__(self) -> str:
+        return (f"\n---Account Details---\n"
+                f"User Name: {self.userName}\n"
+                f"Account ID: {self.accountId}\n"
+                f"Account Type: {self.accountType}\n"
+                f"Total Balance: {self.totalBalance}")
