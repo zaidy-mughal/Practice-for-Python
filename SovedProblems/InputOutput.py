@@ -10,6 +10,7 @@ def wordFrequency(filename):
 
 
 
+# this function is used to read the txt file and count the frequency of each letter
 def letterFrequency(fileName):
     with open(fileName,'r',encoding='utf-8') as file:
         fullfile = file.read()
