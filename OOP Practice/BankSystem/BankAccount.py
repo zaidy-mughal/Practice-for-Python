@@ -1,4 +1,7 @@
 class BankAccount:
+
+    """This is the base class for Checking Account and Saving Account"""
+
     def __init__(self,accountId,userName,totalBalance,accountType):
         self.accountId = accountId
         self.userName = userName

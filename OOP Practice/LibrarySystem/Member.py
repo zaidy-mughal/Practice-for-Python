@@ -1,5 +1,7 @@
 class Member:
 
+    """This class is created to Alter Member Behaviour and it is composed in Library Class"""
+
     def __init__(self,memberName,memberId) -> None:
         self.memberName = memberName
         self.memberId = memberId

@@ -3,6 +3,8 @@ from Developer import Developer
 
 class Manager(Employee):
 
+    """This class is to Create and Alter the Behaviour of a Manager. And this class is inherited from Employee Class."""
+
     def __init__(self, name, employeeId, age, salary) -> None:
         super().__init__(name, employeeId, age, salary)
         self.projects = []

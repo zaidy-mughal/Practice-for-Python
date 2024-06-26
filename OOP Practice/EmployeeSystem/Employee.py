@@ -1,5 +1,8 @@
 
 class Employee:
+
+    """This is the Base Class for Developer and Manager class"""
+
     def __init__(self,name,employeeId,age,salary) -> None:
         self.name = name
         self.employeeId = employeeId

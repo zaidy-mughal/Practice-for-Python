@@ -2,6 +2,9 @@ from Book import Book
 from Member import Member
 
 class Library:
+
+    """This class is used to handle many Libary operations with the composition of Book and Member Class"""
+
     def __init__(self) -> None:
         self.booksList = []
         self.membersList = []

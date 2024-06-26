@@ -2,6 +2,8 @@ from Employee import Employee
 
 class Developer(Employee):
 
+    """This class is to Create and Alter the Behaviour of a Developer. And this class is inherited from Employee Class."""
+
     def __init__(self, name, employeeId, age, salary,programmingLanguages) -> None:
         super().__init__(name, employeeId, age, salary)
         self.programmingLanguages = programmingLanguages

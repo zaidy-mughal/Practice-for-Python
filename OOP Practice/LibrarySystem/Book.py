@@ -2,6 +2,9 @@ from typing import Any
 
 
 class Book:
+
+    """This class is to alter the Behavior of a Book in Library Management System"""
+
     def __init__(self,bookName,bookAuthor,bookId,bookStatus) -> None:
         self.bookName = bookName
         self.bookAuthor = bookAuthor
