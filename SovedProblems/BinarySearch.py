@@ -1,28 +1,32 @@
 #this function performs binary search on sorted list
 
-def findMiddle(sortedList):
-    if len(sortedList)%2==0:
-        return int((len(sortedList)/2)-1)
-    else:
-        return int(len(sortedList)/2)
-
 
 def binarySearch(data,sortedList):
+    low = 0
+    high = len(sortedList)-1
 
-    middleIndex = findMiddle(sortedList)
+    while low <= high:
+        
+        middle = int((low+high)/2)
 
-    if data == sortedList[middleIndex]:
-        return True
-    if data < sortedList[middleIndex]:
-        return binarySearch(data,sortedList[:middleIndex])
-    if data > sortedList[middleIndex]:
-        return binarySearch(data,sortedList[middleIndex:])
-    else:
-        return False 
+        if data < sortedList[middle]:
+            high = middle-1
+        elif data > sortedList[middle]:
+            low = middle+1
+        else:
+            return middle
+        
+    return -1
 
+
+    
 
 list = [1,2,3,4,5,6,7]
-print(binarySearch(3,list))
+index = binarySearch(8,list)
+if index == -1:
+    print('Value Not Found')
+else:
+    print(print('Index of searched Element is: ',index))
     
     
     
