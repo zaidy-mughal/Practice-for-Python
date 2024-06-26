@@ -20,3 +20,6 @@ class SavingAccount(BankAccount):
     
     def checkBalance(self):
         return super().checkBalance()
+
+    def __str__(self) -> str:
+        return super().__str__()
