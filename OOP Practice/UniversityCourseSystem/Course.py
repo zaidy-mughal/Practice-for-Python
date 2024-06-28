@@ -1,6 +1,8 @@
 from Instructor import Instructor
 
 class Course:
+
+    """This class is used to handle course operations and Instructor is Composed in this class"""
     
     def __init__(self,courseCode,courseName,courseInstructor: Instructor) -> None:
         self.courseCode = courseCode

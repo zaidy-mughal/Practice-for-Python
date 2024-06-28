@@ -2,6 +2,8 @@ from Course import Course
 
 class Student:
 
+    """This class is used to handle Students operations"""
+
     def __init__(self,studentName,studentId: int,degree,semester) -> None:
         self.studentName = studentName
         self.studentId = studentId

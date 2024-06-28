@@ -1,6 +1,8 @@
 
 class Instructor:
 
+    """This class is used to manage instructor related tasks"""
+
     def __init__(self,instructorName,instructorId,position,experience) -> None:
         self.instructorName = instructorName
         self.instructorId = instructorId
