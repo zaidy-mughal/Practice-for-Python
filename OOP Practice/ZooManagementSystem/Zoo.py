@@ -44,7 +44,7 @@ class Zoo:
         name = input("Enter Animal Name to Make Sound: ")
         for animal in self.animals:
             if name == animal.name:
-                self.animals.makeSound()
+                animal.makeSound()
                 break
         else:
             print("Animal not Found!")
@@ -54,7 +54,7 @@ class Zoo:
         name = input("Enter Animal Name to Feed: ")
         for animal in self.animals:
             if name == animal.name:
-                self.animals.eat()
+                animal.eat()
                 break
         else:
             print("Animal not Found!")
@@ -64,7 +64,7 @@ class Zoo:
         name = input("Enter Animal Name to Check Health: ")
         for animal in self.animals:
             if name == animal.name:
-                self.animals.checkHealth()
+                animal.checkHealth()
                 break
         else:
             print("Animal not Found!")
