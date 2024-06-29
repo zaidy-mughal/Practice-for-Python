@@ -10,9 +10,13 @@ class Teacher(Person):
         self.experience = experience
 
 
-    def increasePay(self,increasedPay):
-        self.pay += increasedPay
-        print("Pay has been Increased")
+    def increasePay(self):
+        increasedPay = int(input("Enter the pay to increase(int): "))
+        if increasedPay > 0:
+            self.pay += increasedPay
+            print("Pay has been Increased")
+        else:
+            print("Invalid Increament")
 
 
     def __str__(self) -> str:

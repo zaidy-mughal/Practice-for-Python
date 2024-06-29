@@ -1,8 +1,11 @@
+#this import is used to make the class Abstract and to make abstract method we should also import abstractmethod from abc Package
 
-class Person:
+from abc import ABC
+
+class Person(ABC):
 
     """This class is designed to store person data and to make subclasses"""
-
+    
     def __init__(self,name,age,id) -> None:
         self.name = name
         self.age = age

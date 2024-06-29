@@ -9,6 +9,13 @@ class Student(Person):
         super().__init__(name, age, id)
         self.grade = grade
         self.feePerMonth = feePerMonth 
+
+
+    def updateGrade(self):
+        newGrade = input("Enter New Grade of Student: ")
+        self.grade = newGrade
+        print("Grade updated!")
+        
            
     def __str__(self) -> str:
         return (super().__str__()+f"Grade:       {self.grade}\n"
