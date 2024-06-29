@@ -1,6 +1,4 @@
 from School import School
-import random
-
 
 
 alliedSchool = School()
