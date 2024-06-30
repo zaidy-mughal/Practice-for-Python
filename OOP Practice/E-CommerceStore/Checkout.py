@@ -4,7 +4,7 @@ class Checkout:
 
     def __init__(self,cart: Cart,shippingAddress) -> None:
         self.cart = cart
-        self.discount = None
+        self.discount = 1
         self.shippingAddress = shippingAddress
         self.paymentMethod = ''
         self.currentStatus = "Pending"
@@ -14,7 +14,7 @@ class Checkout:
         total = 0
         for item in self.cart.items:
             total += item.price * item.quantity
-        total = total * self.discount/100
+        total = total - (total * self.discount/100)
         print(f"\nTotal Bill After applying {self.discount} % discount is : {total}\n")
 
 
