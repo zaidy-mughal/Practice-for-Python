@@ -24,7 +24,7 @@ while True:
     print("4. View All Products of Inventory")
     print("5. Check Remaining Capacity of Warhouse")
     print("6. Warehouse Details")
-    print("7. Press Other than 1-5 to Close.")
+    print("7. Press Other than 1-6 to Close.")
 
     choice = int(input("\nEnter your choice: "))
         
