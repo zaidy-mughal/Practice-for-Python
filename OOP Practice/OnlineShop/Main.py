@@ -36,27 +36,22 @@ while True:
 
     elif choice == 2:
 
-        if customer is not None:
-            if productList is not None:
-
-                for product in productList:
-                    print(product)
-                while True:
-                    name = input("\nEnter name of product to order \n(Enter 0 to stop adding products): ")
-                    if product.name == name:
-                        productList.append(product)
-                        print("Product added Successfully!")
-                    elif name == "0":
-                        break
-                    else: 
-                        print("Product Not Found!")
-                order = Order(random.randint(100,999),customer.customerId,productList)
-                customer.placeOrder(order)   
-            
-            else:
-                print("Add Products to view some.")    
+        if customer is not None and productList is not None:
+            for product in productList:
+                print(product)
+            while True:
+                name = input("\nEnter name of product to order \n(Enter 0 to stop adding products): ")
+                if product.name == name:
+                    productList.append(product)
+                    print("Product added Successfully!")
+                elif name == "0":
+                    break
+                else: 
+                    print("Product Not Found!")
+            order = Order(random.randint(100,999),customer.customerId,productList)
+            customer.placeOrder(order)     
         else:
-            print("Register Customer First")
+            print("Register Customer First AND Add Products to view some.")
         
         
 
