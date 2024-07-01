@@ -1,6 +1,4 @@
-from Flight import Flight
-from Passenger import Passenger
-from Reservation import Reservation
+
 
 myReservation = None
 print("\n======  System ======\n")
