@@ -32,3 +32,12 @@ class ChatRoom:
         self.users.append(user)
         print("User Added Successfully! Now you can send messages!\n")
 
+
+    def veiwUsers(self):
+        for user in self.users:
+            print(user)
+
+
+    def veiwAllmessages(self):
+        for message in self.messages:
+            print(f"UserID: {message.senderId} Message: {message.content}\n")
