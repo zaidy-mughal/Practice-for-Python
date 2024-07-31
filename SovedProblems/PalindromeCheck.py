@@ -2,12 +2,13 @@
 
 def isPalindrom(string):
     length = int(len(string)/2)
-    for i in range(length):
-        if string[i] != string[-(i+1)]:
-            return False
+
+    # for i in range(length):
+    if string[i] != string[-(i+1)]:
+        return False
     return True
         
     
 
-string = 'zaad'
+string = 'zaiaz'
 print(isPalindrom(string))

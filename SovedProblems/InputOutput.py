@@ -25,9 +25,9 @@ def letterFrequency(fileName):
 
 filename = 'test.txt'
 with open(filename,'w',encoding='utf-8') as file2:
-    file2.write('My name is is zaid amjad')
+    file2.write('This is my name. My college name is Supirior')
 
 wordFrequency(filename)
-letterFrequency(filename)
+# letterFrequency(filename)
 
     
